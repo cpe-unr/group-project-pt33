@@ -1,4 +1,4 @@
-//Created by: Mark Marsala and Marshall Farris
+//Created by: Mark Marsala, Marshall Farris, and Johnathon Franco Sosa
 //Date: 5/4/2021
 //Reading and writing for an 8 bit mono wav file
 
@@ -48,5 +48,3 @@ int Mono8::getBufferSize() const
 {
 	return waveHeader.data_bytes;
 }
-
-
