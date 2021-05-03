@@ -5,9 +5,11 @@
 #include <string>
 #include <fstream>
 #include <iostream>
-#include "Wav.h"
+#include "mono8.h"
 
-void Wav::readFile(const std::string &fileName)
+using namespace std;
+
+void Mono8::readFile()
 {
 	std::ifstream file(fileName,std::ios::binary | std::ios::in);
 	if(file.is_open())
@@ -16,23 +18,25 @@ void Wav::readFile(const std::string &fileName)
 		buffer = new unsigned char[waveHeader.data_bytes];
 		file.read((char*)buffer, waveHeader.data_bytes);
 		file.close();
+		cout << "Reading 8 bit mono file" << endl;
 	}
 }
 
-unsigned char *Wav::getBuffer()
+unsigned char* Mono8::getBuffer()
 {
 	return buffer;
 }
 
-void Wav::writeFile(const std::string &outFileName)
+void Mono8::writeFile(const std::string &outFileName)
 {
 	std::ofstream outFile(outFileName, std::ios::out | std::ios::binary);
 	outFile.write((char*)&waveHeader,sizeof(wav_header));
 	outFile.write((char*)buffer, waveHeader.data_bytes);
 	outFile.close();
+	cout << "Writing 8 bit mono file" << endl;
 }
 
-Wav::~Wav()
+Mono8::~Mono8()
 {
 	if(buffer != NULL)
 	{
@@ -40,7 +44,9 @@ Wav::~Wav()
 	}
 }
 
-int Wav::getBufferSize() const 
+int Mono8::getBufferSize() const 
 {
 	return waveHeader.data_bytes;
 }
+
+
