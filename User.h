@@ -11,17 +11,18 @@
 
 
 class UI{
-protected:
+private:
 	std::string openFileName;
 	std::string saveFileName;
 	int processorStatus;
+//	std::string fileName;
 
 public:
 	UI();
 	virtual ~UI();
 
 	void setOpenFileName(std::string fileOpen);
-	std::string getFileOpen();
+	std::string getOpenFileName();
 
 	void setSaveFileName(std::string fileSave);
 	std::string getFileSave();

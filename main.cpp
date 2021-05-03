@@ -1,6 +1,6 @@
 /** @file */
 #include <iostream>
-
+#include "User.h"
 /**
  * \brief   The function bar.
  *
@@ -27,5 +27,9 @@ void fn(){
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
+    
+    UI user;
+    
+    
     return 0;
 }
