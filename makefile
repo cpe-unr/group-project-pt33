@@ -2,16 +2,16 @@ audioprocessor: main.cpp mono8.o mono16.o stereo8.o stereo16.o Limiter.o Echo.o 
 	g++ -std=c++11 main.cpp mono8.o mono16.o stereo8.o stereo16.o Limiter.o Echo.o NoiseGate.o -o audioprocessor
 	
 mono8.o: mono8.cpp mono8.h waveHeader.h
-	g++ -std=c++11 mono8.cpp
+	g++ -c -std=c++11 mono8.cpp
 	
 mono16.o: mono16.cpp mono16.h waveHeader.h
-	g++ -std=c++11 mono16.cpp
+	g++ -c -std=c++11 mono16.cpp
 	
 stereo8.o: stereo8.cpp stereo8.h waveHeader.h
-	g++ -std=c++11 stereo8.cpp
+	g++ -c -std=c++11 stereo8.cpp
 	
 stereo16.o: stereo16.cpp stereo16.h waveHeader.h
-	g++ -std=c++11 stereo16.cpp
+	g++ -c -std=c++11 stereo16.cpp
 	
 Limiter.o: Limiter.cpp Limiter.h
 	g++ -c -std=c++11 Limiter.cpp
