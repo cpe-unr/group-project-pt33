@@ -20,7 +20,9 @@ private:
 public:
 	UI();
 	virtual ~UI();
-
+	
+	void openFile();
+/*
 	void setOpenFileName(std::string fileOpen);
 	std::string getOpenFileName();
 
@@ -29,6 +31,7 @@ public:
 
 	void setProcessorStatus(int processor);
 	int getProcessorStatus();
+*/
 };
 
 #endif
