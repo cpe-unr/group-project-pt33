@@ -5,7 +5,11 @@
 
 
 #include "User.h"
+#include "NoiseGate.h"
+#include "Limiter.h"
+#include "Echo.h"
 #include <fstream>
+#include <iostream>
 
 
 UI::UI(){
@@ -23,10 +27,6 @@ UI::UI(){
 UI::~UI(){
 	std::cout << "in defualt user dctor" << std::endl;
 }
-
-
-
-
 
 /*
 void UI::openFile(){
@@ -72,6 +72,30 @@ std::string getFileSave(){
 
 }
 
+int getMenuChoice(){
+
+	int choice;
+
+	std::cout << "Processing Choice:" << std::endl;
+	std::cout << "1 - Normalization" << std::endl;
+	std::cout << "2 - Noise-Gate" << std::endl;
+	std::cout << "3 - Echo" std::endl;
+
+	std::cin >> choice;
+
+	return choice;
+
+}
+
+int menuSwitches(){
+	int choice = getMenuChoice();
+	switch(choice) {
+		case 1: Limiter::processbuffer()
+		case 2: NoiseGate::processbuffer()
+		case 3: Echo::processbuffer()
+	}
+}
+
 void setProcessorStatus(int processor){
 
 }
@@ -79,3 +103,4 @@ int getProcessorStatus(){
 
 }
 */
+

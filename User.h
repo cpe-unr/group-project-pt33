@@ -15,6 +15,7 @@ private:
 	std::string fileName;
 	std::string newFileName;
 	int processorStatus;
+	int option;
 //	std::string fileName;
 
 public:
@@ -22,6 +23,8 @@ public:
 	virtual ~UI();
 
 	int fileSelection();
+
+
 
 /*	
 	void openFile();
@@ -35,6 +38,10 @@ public:
 	void setProcessorStatus(int processor);
 	int getProcessorStatus();
 */
+	void setOption(int option);
+	int getOption();
+
+	int switch(int option);
 };
 
 #endif
