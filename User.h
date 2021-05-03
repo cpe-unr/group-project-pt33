@@ -12,17 +12,20 @@
 
 class UI{
 private:
-	std::string openFileName;
-	std::string saveFileName;
+	std::string fileName;
+	std::string newFileName;
 	int processorStatus;
 //	std::string fileName;
 
 public:
 	UI();
 	virtual ~UI();
-	
+
+	int fileSelection();
+
+/*	
 	void openFile();
-/*
+
 	void setOpenFileName(std::string fileOpen);
 	std::string getOpenFileName();
 

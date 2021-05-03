@@ -10,8 +10,9 @@
 
 UI::UI(){
 	std::cout << "in defualt user cotr" << std::endl;
-	openFile();
 /*
+	openFile();
+
 	std::string fileName;
 	std::cout << "Please enter an audio file name to open" << std::endl;
 	std::cin >> fileName;
@@ -23,6 +24,11 @@ UI::~UI(){
 	std::cout << "in defualt user dctor" << std::endl;
 }
 
+
+
+
+
+/*
 void UI::openFile(){
 	
 	std::ifstream fin;
@@ -47,7 +53,7 @@ void UI::openFile(){
 }
 
 
-/*
+
 void setOpenFileName(std::string fileOpen){
 	fileOpen = fileOpen;
 }
