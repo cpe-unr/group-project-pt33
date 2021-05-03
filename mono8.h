@@ -5,9 +5,11 @@
 #ifndef MONO8_H
 #define MONO8_H
 #include "waveHeader.h"
+#include "iFileIO.h"
 
 class Mono8 : public iFileIO
 {
+	std::string fileName;
 	unsigned char* buffer = NULL;
 	wav_header waveHeader;
 public:
