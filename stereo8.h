@@ -20,6 +20,11 @@ class Stereo8 : public iFileIO
 	unsigned char* leftBuffer = NULL;
 	unsigned char* rightBuffer = NULL;
 public:
+
+/**
+ * Paramaterized constructor for Stereo8
+ * @param newFile - the new file that is being used
+ */
 	Stereo8(const std::string newFile);
 /**
 *  Overrides method from interface

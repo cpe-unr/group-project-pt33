@@ -90,9 +90,9 @@ int getMenuChoice(){
 int menuSwitches(){
 	int choice = getMenuChoice();
 	switch(choice) {
-		case 1: Limiter::processbuffer()
-		case 2: NoiseGate::processbuffer()
-		case 3: Echo::processbuffer()
+		case 1: Limiter::processbuffer(){}
+		case 2: NoiseGate::processbuffer(){}
+		case 3: Echo::processbuffer(){}
 	}
 }
 

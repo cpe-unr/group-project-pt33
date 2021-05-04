@@ -20,6 +20,11 @@ class Stereo16 : public iFileIO
 	short* leftBuffer = NULL;
 	short* rightBuffer = NULL;
 public:
+
+/**
+ * Paramaterized constructor for Stereo16
+ * @param newFile - the new file that is being used
+ */
 	Stereo16(const std::string newFile);
 /**
 *  Overrides method from interface

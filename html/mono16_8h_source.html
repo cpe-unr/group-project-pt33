@@ -58,24 +58,26 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="structwav__header.html">wav_header</a> waveHeader;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mono16.html#a2dc9a67018d02be79f58a74132d0407d">readFile</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mono16.html#a5f0fb6aabaf01c24c0dd34aea0acc457">writeFile</a>(<span class="keyword">const</span> std::string &amp;outFileName) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">short</span>* <a class="code" href="class_mono16.html#a9cd5aa9c7190e5d901e1862a98e24d6e">getBuffer</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_mono16.html#a2afaa44183254cf850aa57e0606e690c">Mono16</a>(<span class="keyword">const</span> std::string newFile);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mono16.html#a2dc9a67018d02be79f58a74132d0407d">readFile</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_mono16.html#a5f0fb6aabaf01c24c0dd34aea0acc457">writeFile</a>(<span class="keyword">const</span> std::string &amp;outFileName) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_mono16.html#a9d996f29118ef1586cb9269a063959ed">getBufferSize</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">short</span>* <a class="code" href="class_mono16.html#a9cd5aa9c7190e5d901e1862a98e24d6e">getBuffer</a>();</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_mono16.html#a367997b24537cace444a3b48d9c7fe9a">~Mono16</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_mono16.html#a9d996f29118ef1586cb9269a063959ed">getBufferSize</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_mono16.html#a367997b24537cace444a3b48d9c7fe9a">~Mono16</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_mono16_html"><div class="ttname"><a href="class_mono16.html">Mono16</a></div><div class="ttdef"><b>Definition:</b> mono16.h:14</div></div>
-<div class="ttc" id="aclass_mono16_html_a2dc9a67018d02be79f58a74132d0407d"><div class="ttname"><a href="class_mono16.html#a2dc9a67018d02be79f58a74132d0407d">Mono16::readFile</a></div><div class="ttdeci">void readFile() override</div><div class="ttdef"><b>Definition:</b> mono16.cpp:12</div></div>
-<div class="ttc" id="aclass_mono16_html_a367997b24537cace444a3b48d9c7fe9a"><div class="ttname"><a href="class_mono16.html#a367997b24537cace444a3b48d9c7fe9a">Mono16::~Mono16</a></div><div class="ttdeci">virtual ~Mono16()</div><div class="ttdef"><b>Definition:</b> mono16.cpp:39</div></div>
-<div class="ttc" id="aclass_mono16_html_a5f0fb6aabaf01c24c0dd34aea0acc457"><div class="ttname"><a href="class_mono16.html#a5f0fb6aabaf01c24c0dd34aea0acc457">Mono16::writeFile</a></div><div class="ttdeci">void writeFile(const std::string &amp;outFileName) override</div><div class="ttdef"><b>Definition:</b> mono16.cpp:30</div></div>
-<div class="ttc" id="aclass_mono16_html_a9cd5aa9c7190e5d901e1862a98e24d6e"><div class="ttname"><a href="class_mono16.html#a9cd5aa9c7190e5d901e1862a98e24d6e">Mono16::getBuffer</a></div><div class="ttdeci">short * getBuffer()</div><div class="ttdef"><b>Definition:</b> mono16.cpp:25</div></div>
-<div class="ttc" id="aclass_mono16_html_a9d996f29118ef1586cb9269a063959ed"><div class="ttname"><a href="class_mono16.html#a9d996f29118ef1586cb9269a063959ed">Mono16::getBufferSize</a></div><div class="ttdeci">int getBufferSize() const</div><div class="ttdef"><b>Definition:</b> mono16.cpp:47</div></div>
+<div class="ttc" id="aclass_mono16_html_a2afaa44183254cf850aa57e0606e690c"><div class="ttname"><a href="class_mono16.html#a2afaa44183254cf850aa57e0606e690c">Mono16::Mono16</a></div><div class="ttdeci">Mono16(const std::string newFile)</div><div class="ttdef"><b>Definition:</b> mono16.cpp:12</div></div>
+<div class="ttc" id="aclass_mono16_html_a2dc9a67018d02be79f58a74132d0407d"><div class="ttname"><a href="class_mono16.html#a2dc9a67018d02be79f58a74132d0407d">Mono16::readFile</a></div><div class="ttdeci">void readFile() override</div><div class="ttdef"><b>Definition:</b> mono16.cpp:17</div></div>
+<div class="ttc" id="aclass_mono16_html_a367997b24537cace444a3b48d9c7fe9a"><div class="ttname"><a href="class_mono16.html#a367997b24537cace444a3b48d9c7fe9a">Mono16::~Mono16</a></div><div class="ttdeci">virtual ~Mono16()</div><div class="ttdef"><b>Definition:</b> mono16.cpp:44</div></div>
+<div class="ttc" id="aclass_mono16_html_a5f0fb6aabaf01c24c0dd34aea0acc457"><div class="ttname"><a href="class_mono16.html#a5f0fb6aabaf01c24c0dd34aea0acc457">Mono16::writeFile</a></div><div class="ttdeci">void writeFile(const std::string &amp;outFileName) override</div><div class="ttdef"><b>Definition:</b> mono16.cpp:35</div></div>
+<div class="ttc" id="aclass_mono16_html_a9cd5aa9c7190e5d901e1862a98e24d6e"><div class="ttname"><a href="class_mono16.html#a9cd5aa9c7190e5d901e1862a98e24d6e">Mono16::getBuffer</a></div><div class="ttdeci">short * getBuffer()</div><div class="ttdef"><b>Definition:</b> mono16.cpp:30</div></div>
+<div class="ttc" id="aclass_mono16_html_a9d996f29118ef1586cb9269a063959ed"><div class="ttname"><a href="class_mono16.html#a9d996f29118ef1586cb9269a063959ed">Mono16::getBufferSize</a></div><div class="ttdeci">int getBufferSize() const</div><div class="ttdef"><b>Definition:</b> mono16.cpp:52</div></div>
 <div class="ttc" id="aclassi_file_i_o_html"><div class="ttname"><a href="classi_file_i_o.html">iFileIO</a></div><div class="ttdef"><b>Definition:</b> iFileIO.h:11</div></div>
 <div class="ttc" id="ai_file_i_o_8h_html"><div class="ttname"><a href="i_file_i_o_8h.html">iFileIO.h</a></div></div>
 <div class="ttc" id="astructwav__header_html"><div class="ttname"><a href="structwav__header.html">wav_header</a></div><div class="ttdef"><b>Definition:</b> waveHeader.h:27</div></div>
