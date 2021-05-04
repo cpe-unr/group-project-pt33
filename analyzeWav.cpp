@@ -6,18 +6,18 @@
 
 using namespace std;
 
-AnalyzeWav::AnalyzeWav(string newFileName)
+AnalyzeWav::AnalyzeWav(string fin)
 {
-	fileName = newFileName;
+	fileIn = fin;
 	getTechData();
 }
 
 void AnalyzeWav::getTechData()
 {
-	ifstream file(fileName, ios::binary | ios::in);
+	ifstream file(fileIn, ios::binary | ios::in);
 	if(file.is_open())
 	{
-		file.read((char*)&waveHeader, sizeof(wave_header));
+		file.read((char*)&waveHeader, sizeof(wav_header));
 		file.close();
 	}
 	numChan = waveHeader.num_channels;
@@ -45,4 +45,73 @@ vector<string> AnalyzeWav::displayTechData()
 	
 	output.push_back("Sample Rate: ");
 	output.push_back(to_string(sampleRate));
+	
+	return output;
+}
+
+int AnalyzeWav::getChan()
+{
+	return numChan;
+}
+
+int AnalyzeWav::getNumBits()
+{
+	return bitSize;
+}
+
+int AnalyzeWav::getFileType()
+{
+	if((numChan == 1) && (bitSize == 8))
+	{
+		return 18;
+	}
+	else if((numChan == 1) && (bitSize == 16))
+	{
+		return 116;
+	}
+	else if((numChan == 2) && (bitSize == 8))
+	{
+		return 28;
+	}
+	else if((numChan == 2) && (bitSize == 16))
+	{
+		return 216;
+	}
+	return 0;
+}
+
+string AnalyzeWav::getPCM()
+{
+	if(PCM == 1)
+	{
+		return "PCM";
+	}
+	else if(PCM == 3)
+	{
+		return "IEEE Float";
+	}
+	else
+	{
+		return "Audio Format Unknown";
+	}
+}
+
+int AnalyzeWav::getBitRate()
+{
+	return bitRate;
+}
+
+int AnalyzeWav::getSampleRate()
+{
+	return sampleRate;
+}
+
+ostream& operator << (ostream &out, AnalyzeWav &wav)
+{
+	out << "Number of Channels: " << wav.getChan() << "\n";
+	out << "Bit Depth: " << wav.getNumBits() << "\n";
+	out << "Audio Format: " << wav.getPCM() << "\n";
+	out << "Byte Rate: " << wav.getBitRate() << "\n";
+	out << "Sample Rate: " << wav.getSampleRate() << "\n";
+	return out;
 }

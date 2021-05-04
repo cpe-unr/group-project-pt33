@@ -5,7 +5,9 @@
 #ifndef ANALYZEWAV_H
 #define ANALYZEWAV_H
 
+#include "waveHeader.h"
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <vector>
 
@@ -17,21 +19,20 @@ class AnalyzeWav{
 	int bitRate = 0;
 	int sampleRate = 0;
 
-	waveHeader waveHeader;
+	wav_header waveHeader;
 
 public:
 	AnalyzeWav(const std::string fin);
-	
 	void getTechData();
 	int getChan();
 	int getNumBits();
 	int getFileType();
+	std::string getPCM();
 	int getBitRate();
 	int getSampleRate();
-	std::string getPCM();
-	std::vector<std::string> displayTechData;
+	std::vector<std::string> displayTechData();
 	
-	friend std::ostream & operator<< (std::ostream &out, AnalyzeWav &analyze);
+	friend std::ostream& operator << (std::ostream &out, AnalyzeWav &wav);
 	
 };
 
