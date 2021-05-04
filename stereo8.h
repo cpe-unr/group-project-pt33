@@ -20,7 +20,7 @@ class Stereo8 : public iFileIO
 	unsigned char* leftBuffer = NULL;
 	unsigned char* rightBuffer = NULL;
 public:
-
+	Stereo8(const std::string newFile);
 /**
 *  Overrides method from interface
 *  Reads an 8 bit stereo wav file

@@ -16,7 +16,7 @@ class Mono8 : public iFileIO
 	unsigned char* buffer = NULL;
 	wav_header waveHeader;
 public:
-
+	Mono8(const std::string newFile);
 /**
  * Reads the file that is inputted into the program
  */

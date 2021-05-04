@@ -20,7 +20,7 @@ class Stereo16 : public iFileIO
 	short* leftBuffer = NULL;
 	short* rightBuffer = NULL;
 public:
-
+	Stereo16(const std::string newFile);
 /**
 *  Overrides method from interface
 *  Reads a 16 bit stereo wav file

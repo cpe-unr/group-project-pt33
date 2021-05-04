@@ -16,7 +16,7 @@ class Mono16 : public iFileIO
 	short* buffer = NULL;
 	wav_header waveHeader;
 public:
-
+	Mono16(const std::string newFile);
 /**
  * Reads the file that is inputted into the program
  */
