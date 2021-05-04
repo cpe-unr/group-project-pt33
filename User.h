@@ -41,7 +41,7 @@ public:
 	void setOption(int option);
 	int getOption();
 
-	int switch(int option);
+	int switchCase(int option);
 };
 
 #endif
