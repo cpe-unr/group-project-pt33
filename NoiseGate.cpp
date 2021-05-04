@@ -9,7 +9,9 @@ NoiseGate::NoiseGate(){
 	std::cout << "In NoiseGate default cotr" << std::endl;
 }
 
-NoiseGate::NoiseGate(int noiseGap) : noiseGap(noiseGap){}
+NoiseGate::NoiseGate(int noiseGap) : noiseGap(noiseGap){
+	std::cout << "In NoiseGate param cotr" << std::endl;
+}
 
 NoiseGate::~NoiseGate(){
 	std::cout << "in NoiseGate dcotr" << std::endl;

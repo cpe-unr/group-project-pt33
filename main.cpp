@@ -8,6 +8,10 @@
 #include "stereo8.h"
 #include "mono16.h"
 #include "stereo16.h"
+#include "Echo.h"
+#include "NoiseGate.h"
+#include "Limiter.h"
+
 /**
  * \brief   The function bar.
  *
@@ -63,6 +67,19 @@ int main() {
 	s8.readFile(fileIn[1]);
 	m16.readFile(fileIn[2]);
 	s16.readFile(fileIn[3]);
+	
+	Echo *processor = new Echo(12500);
+//	processor->processBuffer(m8.getBuffer(),m8.getBufferSize());
+//	m8.writeFile("echos.wav");
+
+	
+	Limiter *limiter = new Limiter();
+//	limiter->processBuffer(m8.getBuffer(), m8.getBufferSize());
+//	m8.writeFile("limit.wav");
+
+	NoiseGate *noiseGate = new NoiseGate(8);
+//	noiseGate->processBuffer(m8.getBuffer(), m8.getBufferSize());
+//	m8.writeFile("noise.wav");
 
 	UI user;
 
