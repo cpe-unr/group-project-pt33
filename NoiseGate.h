@@ -8,7 +8,16 @@
 class NoiseGate{
 	int noiseGap;
 public:
+
+/**
+ * Constructor for the NoiseGate class
+ */
 	NoiseGate();
+
+/**
+ * Paramterized constructor 
+ * @param noiseGap - the 
+ */
 	NoiseGate(int noiseGap);
 	virtual ~NoiseGate();
 	template<typename mono>

@@ -13,10 +13,28 @@ class Mono16 : public iFileIO
 	short* buffer = NULL;
 	wav_header waveHeader;
 public:
+
+/**
+ * Reads the inputted wav file
+ */
 	void readFile() override;
+
+/** Creates the outputted 16 bit mono wav file which will override the previous one
+ * @param outFileName - name of the file
+ */
 	void writeFile(const std::string &outFileName) override;
+
+/** Grabs the buffer from the wav file
+ */
 	short* getBuffer();
+
+/** Grabs the buffer size of the wav file
+ */
 	int getBufferSize() const;
+
+/**
+ * Destructor for the Mono16 class
+ */
 	virtual ~Mono16();
 };
 
