@@ -18,7 +18,7 @@ Echo::~Echo(){
 	std::cout << "in echo dcotr" << std::endl;
 }
 
-template<typename mono>
+/*template<typename mono>
 void Echo::processBuffer(mono buffer, int bufferSize){
 	std::cout << "in echo processorBuffer" << std::endl;
 
@@ -26,8 +26,6 @@ void Echo::processBuffer(mono buffer, int bufferSize){
 		buffer[i] = ((buffer[i] + buffer[i+delay]) * 0.5);
 	}
 }
-
-
 
 template<typename stereo>
 void Echo::processBuffer(stereo rightBuffer, stereo leftBuffer,  int bufferSize){
@@ -38,4 +36,5 @@ void Echo::processBuffer(stereo rightBuffer, stereo leftBuffer,  int bufferSize)
 		rightBuffer[i] = ((rightBuffer[i] + rightBuffer[i+delay]) * 0.5);
 	}
 }
+*/
 

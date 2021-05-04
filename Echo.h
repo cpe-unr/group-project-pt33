@@ -4,6 +4,7 @@
 
 #ifndef ECHO_H
 #define ECHO_H
+#include <iostream>
 
 /**
  * Class that creates an echo effect for the wav file
@@ -39,21 +40,34 @@ public:
  * @param buffer - buffer for the file
  * @param bufferSize - size of the buffer in the file
  */
-	void processBuffer(mono buffer, int bufferSize);
+	void processBuffer(mono buffer, int bufferSize){
+	std::cout << "in echo processorBuffer" << std::endl;
+
+	for(int i = 0; i <= bufferSize - delay; i++){
+		buffer[i] = ((buffer[i] + buffer[i+delay]) * 0.5);
+	}
+}
 
 /** 
  * Template for stereo files
  * @param stereo - type stereo
  */
 	template<typename stereo>
-
+	
 /**
  * Process buffer for type stereo
  * @param leftBuffer - left buffer in stereo file
  * @param rightBuffer - right buffer in stereo file
  * @param bufferSize - buffer size of the stereo file
  */
-	void processBuffer(stereo rightBuffer, stereo leftBuffer,  int bufferSize);
+	void processBuffer(stereo rightBuffer, stereo leftBuffer,  int bufferSize){
+	std::cout << "in echo processorBuffer" << std::endl;
+
+	for(int i = 0; i <= bufferSize - delay; i++){
+		leftBuffer[i] = ((leftBuffer[i] + leftBuffer[i+delay]) * 0.5);
+		rightBuffer[i] = ((rightBuffer[i] + rightBuffer[i+delay]) * 0.5);
+	}
+}
 };
 
 #endif

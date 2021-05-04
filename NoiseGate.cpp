@@ -14,7 +14,7 @@ NoiseGate::NoiseGate(int noiseGap) : noiseGap(noiseGap){}
 NoiseGate::~NoiseGate(){
 	std::cout << "in NoiseGate dcotr" << std::endl;
 }
-
+/*
 template<typename mono>
 void NoiseGate::processBuffer(mono buffer, int bufferSize){
 	
@@ -56,3 +56,4 @@ void NoiseGate::processBuffer(stereo rightBuffer, stereo leftBuffer, int bufferS
 	
 	std::cout << "in NoiseGate processBuffer" << std::endl;
 }
+*/

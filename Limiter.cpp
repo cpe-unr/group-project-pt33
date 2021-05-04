@@ -12,7 +12,7 @@ Limiter::Limiter(){
 Limiter::~Limiter(){
 	std::cout << "in limiter dcotr" << std::endl;
 }
-
+/*
 template<typename mono>
 void Limiter::processBuffer(mono buffer, int bufferSize){
 	
@@ -51,6 +51,4 @@ void Limiter::processBuffer(stereo rightBuffer, stereo leftBuffer,  int bufferSi
 		}
 	}
 }
-
-
-
+*/

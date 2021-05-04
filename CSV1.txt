@@ -1,0 +1,11 @@
+Technical Information
+Number of Channels: 
+1
+Bit Depth: 
+8
+Audio Format: 
+PCM
+Byte Rate: 
+44100
+Sample Rate: 
+44100

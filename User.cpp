@@ -13,7 +13,7 @@
 
 
 UI::UI(){
-	std::cout << "in defualt user cotr" << std::endl;
+	std::cout << "in default user cotr" << std::endl;
 /*
 	openFile();
 
@@ -25,7 +25,7 @@ UI::UI(){
 }
 
 UI::~UI(){
-	std::cout << "in defualt user dctor" << std::endl;
+	std::cout << "in default user dctor" << std::endl;
 }
 
 /*
