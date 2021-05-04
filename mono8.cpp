@@ -9,8 +9,9 @@
 
 using namespace std;
 
-void Mono8::readFile()
+void Mono8::readFile(const std::string &fileName)
 {
+//	std::cout << "In mono8 reading file: " << fileName << std::endl;
 	std::ifstream file(fileName,std::ios::binary | std::ios::in);
 	if(file.is_open())
 	{

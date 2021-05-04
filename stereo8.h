@@ -15,7 +15,7 @@ class Stereo8 : public iFileIO
 	unsigned char* leftBuffer = NULL;
 	unsigned char* rightBuffer = NULL;
 public:
-	void readFile() override;
+	void readFile(const std::string &fileName) override;
 	void writeFile(const std::string &outFileName) override;
 	unsigned char* getBuffer();
 	int getBufferSize() const;

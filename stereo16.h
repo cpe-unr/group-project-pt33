@@ -15,7 +15,7 @@ class Stereo16 : public iFileIO
 	short* leftBuffer = NULL;
 	short* rightBuffer = NULL;
 public:
-	void readFile() override;
+	void readFile(const std::string &fileName) override;
 	void writeFile(const std::string &outFileName) override;
 	short* getBuffer();
 	int getBufferSize() const;

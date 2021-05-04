@@ -8,7 +8,7 @@
 class iFileIO
 {
 protected:
-	virtual void readFile() = 0;
+	virtual void readFile(const std::string &fileName) = 0;
 	virtual void writeFile(const std::string &outFileName) = 0;
 };
 

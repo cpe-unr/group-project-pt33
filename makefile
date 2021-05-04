@@ -1,5 +1,5 @@
-audioprocessor: main.cpp mono8.o mono16.o stereo8.o stereo16.o Limiter.o Echo.o NoiseGate.o analyzeWav.o
-	g++ -std=c++11 main.cpp mono8.o mono16.o stereo8.o stereo16.o Limiter.o Echo.o NoiseGate.o analyzeWav.o -o audioprocessor
+audioprocessor: main.cpp mono8.o mono16.o stereo8.o stereo16.o Limiter.o Echo.o NoiseGate.o analyzeWav.o User.o
+	g++ -std=c++11 main.cpp mono8.o mono16.o stereo8.o stereo16.o Limiter.o Echo.o NoiseGate.o analyzeWav.o User.o -o audioprocessor
 	
 mono8.o: mono8.cpp mono8.h waveHeader.h
 	g++ -c -std=c++11 mono8.cpp

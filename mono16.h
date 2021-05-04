@@ -13,7 +13,7 @@ class Mono16 : public iFileIO
 	short* buffer = NULL;
 	wav_header waveHeader;
 public:
-	void readFile() override;
+	void readFile(const std::string &fileName) override;
 	void writeFile(const std::string &outFileName) override;
 	short* getBuffer();
 	int getBufferSize() const;

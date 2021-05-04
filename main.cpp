@@ -4,6 +4,10 @@
 #include <string>
 #include <fstream>
 #include "User.h"
+#include "mono8.h"
+#include "stereo8.h"
+#include "mono16.h"
+#include "stereo16.h"
 /**
  * \brief   The function bar.
  *
@@ -50,10 +54,23 @@ int main() {
 	std::cout << fileIn[3] << std::endl;
 */	
 	
-
+	Mono8 m8;
+	Stereo8 s8;
+	Mono16 m16;
+	Stereo16 s16;
+	
+	m8.readFile(fileIn[0]);
+	s8.readFile(fileIn[1]);
+	m16.readFile(fileIn[2]);
+	s16.readFile(fileIn[3]);
 
 	UI user;
 
 
 	return 0;
 }
+
+
+
+
+
