@@ -9,6 +9,11 @@
 
 using namespace std;
 
+Mono8::Mono8(const string newFile)
+{
+	fileName = newFile;
+}
+
 void Mono8::readFile()
 {
 	std::ifstream file(fileName,std::ios::binary | std::ios::in);

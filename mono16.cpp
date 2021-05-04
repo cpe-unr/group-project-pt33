@@ -9,6 +9,11 @@
 
 using namespace std;
 
+Mono16::Mono16(string newFile)
+{
+	fileName = newFile;
+}
+
 void Mono16::readFile()
 {
 	std::ifstream file(fileName,std::ios::binary | std::ios::in);

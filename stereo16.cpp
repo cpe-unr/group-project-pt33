@@ -9,6 +9,11 @@
 
 using namespace std;
 
+Stereo16::Stereo16(string newFile)
+{
+	fileName = newFile;
+}
+
 void Stereo16::readFile()
 {
 	std::ifstream file(fileName,std::ios::binary | std::ios::in);
