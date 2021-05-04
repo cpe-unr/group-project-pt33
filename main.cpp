@@ -1,5 +1,8 @@
 /** @file */
 #include <iostream>
+#include <vector>
+#include <string>
+#include <fstream>
 #include "User.h"
 /**
  * \brief   The function bar.
@@ -26,10 +29,31 @@ void fn(){
 }
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+	std::cout << "Hello, World!" << std::endl;
     
-    UI user;
-    
-    
-    return 0;
+	std::vector<std::string> fileIn;
+
+	fileIn.push_back("yes-8bit-mono.wav");
+	fileIn.push_back("yes-8-bit-stereo.wav");
+	fileIn.push_back("yes-16-bit-mono.wav");
+	fileIn.push_back("yes-16-bit-stereo.wav");
+
+	fileIn.push_back("._yes-8bit-mono.wav");
+	fileIn.push_back("._yes-8-bit-stereo.wav");
+	fileIn.push_back("._yes-16-bit-mono.wav");
+	fileIn.push_back("._yes-16-bit-stereo.wav");
+/*
+	std::cout << "test of vector " << sizeof(fileIn) << std::endl;
+	std::cout << fileIn[0] << std::endl;
+	std::cout << fileIn[1] << std::endl;
+	std::cout << fileIn[2] << std::endl;
+	std::cout << fileIn[3] << std::endl;
+*/	
+	
+
+
+	UI user;
+
+
+	return 0;
 }

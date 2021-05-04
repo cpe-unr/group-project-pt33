@@ -1,4 +1,4 @@
-/* Created by Mark Marsala, Ethan Thai, and Marshall Farris 
+/* Created by Mark Marsala, Ethan Thai, Johnathon Franco Sosa and Marshall Farris 
 // for Dr. Lancaster's CS202, Spring 2021
 // Semester Project - Team 33
 */
@@ -41,7 +41,7 @@ public:
 	void setOption(int option);
 	int getOption();
 
-	int switch(int option);
+	int switchCase(int option);
 };
 
 #endif
