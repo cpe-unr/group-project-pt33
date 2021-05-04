@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_stereo16" kind="class" language="C++" prot="public">
+    <compoundname>Stereo16</compoundname>
+    <basecompoundref refid="classi_file_i_o" prot="public" virt="non-virtual">iFileIO</basecompoundref>
+    <includes refid="stereo16_8h" local="no">stereo16.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_stereo16_1a900e590ec60713d2e6e0098dc3562cd5" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Stereo16::fileName</definition>
+        <argsstring></argsstring>
+        <name>fileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stereo16.h" line="17" column="13" bodyfile="stereo16.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stereo16_1a7095134aa2103c4a8831d0e681f15683" prot="private" static="no" mutable="no">
+        <type>short *</type>
+        <definition>short* Stereo16::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stereo16.h" line="18" column="7" bodyfile="stereo16.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stereo16_1a7ca53b305b70852d936b677fc09131c8" prot="private" static="no" mutable="no">
+        <type><ref refid="structwav__header" kindref="compound">wav_header</ref></type>
+        <definition>wav_header Stereo16::waveHeader</definition>
+        <argsstring></argsstring>
+        <name>waveHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stereo16.h" line="19" column="12" bodyfile="stereo16.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stereo16_1a977554c187eb0d150c710861ecdef3f1" prot="private" static="no" mutable="no">
+        <type>short *</type>
+        <definition>short* Stereo16::leftBuffer</definition>
+        <argsstring></argsstring>
+        <name>leftBuffer</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stereo16.h" line="20" column="7" bodyfile="stereo16.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stereo16_1a148b75609ffe363c485568b238e1741c" prot="private" static="no" mutable="no">
+        <type>short *</type>
+        <definition>short* Stereo16::rightBuffer</definition>
+        <argsstring></argsstring>
+        <name>rightBuffer</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stereo16.h" line="21" column="7" bodyfile="stereo16.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_stereo16_1ad03c4d71b3d116136cd60585f324dfe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Stereo16::readFile</definition>
+        <argsstring>() override</argsstring>
+        <name>readFile</name>
+        <reimplements refid="classi_file_i_o_1ad642afa5dfd46efbdfb6b757a0e1c07d">readFile</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overrides method from interface Reads a 16 bit stereo wav file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stereo16.h" line="28" column="6" bodyfile="stereo16.cpp" bodystart="12" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stereo16_1ae78481efb405165eecf4baf75bc912b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Stereo16::writeFile</definition>
+        <argsstring>(const std::string &amp;outFileName) override</argsstring>
+        <name>writeFile</name>
+        <reimplements refid="classi_file_i_o_1aa5e06a46f0f287bb7dcaf8fc4975c16a">writeFile</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>outFileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overrides method from interface Writes a 16 bit stereo wav file <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outFileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to the outFileName </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stereo16.h" line="35" column="6" bodyfile="stereo16.cpp" bodystart="30" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stereo16_1a037e96fa11ae7a93f8840604b2fcd07f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>short *</type>
+        <definition>short * Stereo16::getBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>getBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns buffer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stereo16.h" line="40" column="7" bodyfile="stereo16.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stereo16_1a9da34917c82d19b3c8bca7e787895283" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Stereo16::getBufferSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getBufferSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns waveHeader.data_bytes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stereo16.h" line="45" column="5" bodyfile="stereo16.cpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stereo16_1adc77847b1e7ae14fe975dc11f6994715" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stereo16::allocateBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>allocateBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Allocates Buffer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stereo16.h" line="50" column="6" bodyfile="stereo16.cpp" bodystart="52" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stereo16_1addc2df70c65ea5ee364ed1a7fe181501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stereo16::reallocateBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>reallocateBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reallocates Buffer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stereo16.h" line="55" column="6" bodyfile="stereo16.cpp" bodystart="65" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stereo16_1a9b8656653d748945c20707863067a86f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>short *</type>
+        <definition>short * Stereo16::getLeftBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>getLeftBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns left Buffer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stereo16.h" line="60" column="7" bodyfile="stereo16.cpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stereo16_1aa23264c2262c76ad65dd69499c5e55f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>short *</type>
+        <definition>short * Stereo16::getRightBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>getRightBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns right Buffer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stereo16.h" line="65" column="7" bodyfile="stereo16.cpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stereo16_1a05e724cc0c8e92b565a16dd1a51ca154" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Stereo16::~Stereo16</definition>
+        <argsstring>()</argsstring>
+        <name>~Stereo16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deconstructor for <ref refid="class_stereo16" kindref="compound">Stereo16</ref>. Deletes buffer if not NULL </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="stereo16.h" line="71" column="9" bodyfile="stereo16.cpp" bodystart="39" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Manages stereo16. Reads and writes stereo16, as well as allocates and reallocates memory. Uses iFileIo as an interface. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Stereo16</label>
+        <link refid="class_stereo16"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iFileIO</label>
+        <link refid="classi_file_i_o"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Stereo16</label>
+        <link refid="class_stereo16"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iFileIO</label>
+        <link refid="classi_file_i_o"/>
+      </node>
+    </collaborationgraph>
+    <location file="stereo16.h" line="15" column="1" bodyfile="stereo16.h" bodystart="16" bodyend="72"/>
+    <listofallmembers>
+      <member refid="class_stereo16_1adc77847b1e7ae14fe975dc11f6994715" prot="public" virt="non-virtual"><scope>Stereo16</scope><name>allocateBuffer</name></member>
+      <member refid="class_stereo16_1a7095134aa2103c4a8831d0e681f15683" prot="private" virt="non-virtual"><scope>Stereo16</scope><name>buffer</name></member>
+      <member refid="class_stereo16_1a900e590ec60713d2e6e0098dc3562cd5" prot="private" virt="non-virtual"><scope>Stereo16</scope><name>fileName</name></member>
+      <member refid="class_stereo16_1a037e96fa11ae7a93f8840604b2fcd07f" prot="public" virt="non-virtual"><scope>Stereo16</scope><name>getBuffer</name></member>
+      <member refid="class_stereo16_1a9da34917c82d19b3c8bca7e787895283" prot="public" virt="non-virtual"><scope>Stereo16</scope><name>getBufferSize</name></member>
+      <member refid="class_stereo16_1a9b8656653d748945c20707863067a86f" prot="public" virt="non-virtual"><scope>Stereo16</scope><name>getLeftBuffer</name></member>
+      <member refid="class_stereo16_1aa23264c2262c76ad65dd69499c5e55f3" prot="public" virt="non-virtual"><scope>Stereo16</scope><name>getRightBuffer</name></member>
+      <member refid="class_stereo16_1a977554c187eb0d150c710861ecdef3f1" prot="private" virt="non-virtual"><scope>Stereo16</scope><name>leftBuffer</name></member>
+      <member refid="class_stereo16_1ad03c4d71b3d116136cd60585f324dfe3" prot="public" virt="virtual"><scope>Stereo16</scope><name>readFile</name></member>
+      <member refid="class_stereo16_1addc2df70c65ea5ee364ed1a7fe181501" prot="public" virt="non-virtual"><scope>Stereo16</scope><name>reallocateBuffer</name></member>
+      <member refid="class_stereo16_1a148b75609ffe363c485568b238e1741c" prot="private" virt="non-virtual"><scope>Stereo16</scope><name>rightBuffer</name></member>
+      <member refid="class_stereo16_1a7ca53b305b70852d936b677fc09131c8" prot="private" virt="non-virtual"><scope>Stereo16</scope><name>waveHeader</name></member>
+      <member refid="class_stereo16_1ae78481efb405165eecf4baf75bc912b1" prot="public" virt="virtual"><scope>Stereo16</scope><name>writeFile</name></member>
+      <member refid="class_stereo16_1a05e724cc0c8e92b565a16dd1a51ca154" prot="public" virt="virtual"><scope>Stereo16</scope><name>~Stereo16</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

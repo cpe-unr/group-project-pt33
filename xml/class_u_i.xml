@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_u_i" kind="class" language="C++" prot="public">
+    <compoundname>UI</compoundname>
+    <includes refid="_user_8h" local="no">User.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_i_1aa25e6ee97337c5f4bd554216cfe3eddb" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string UI::fileName</definition>
+        <argsstring></argsstring>
+        <name>fileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="User.h" line="18" column="13" bodyfile="User.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_i_1a37934cbface8c586f74312fbc8365488" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string UI::newFileName</definition>
+        <argsstring></argsstring>
+        <name>newFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="User.h" line="19" column="13" bodyfile="User.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_i_1aa8f6e3aab8b45dbcd0555f56cf0c0863" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UI::processorStatus</definition>
+        <argsstring></argsstring>
+        <name>processorStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="User.h" line="20" column="5" bodyfile="User.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_i_1a302bc8a82e8da248afee976744058e59" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UI::option</definition>
+        <argsstring></argsstring>
+        <name>option</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="User.h" line="21" column="5" bodyfile="User.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_i_1a675985a56b5e87ebdc8e5884b9f2ee09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UI::UI</definition>
+        <argsstring>()</argsstring>
+        <name>UI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for the <ref refid="class_u_i" kindref="compound">UI</ref> class </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="User.h" line="29" column="1" bodyfile="User.cpp" bodystart="15" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_1a1b23d0c64c7cbb3d143d90ec532a7ccd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>UI::~UI</definition>
+        <argsstring>()</argsstring>
+        <name>~UI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor for the <ref refid="class_u_i" kindref="compound">UI</ref> class </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="User.h" line="34" column="9" bodyfile="User.cpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_1ad28850efa6208ecfc32bad726b256ab8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int UI::fileSelection</definition>
+        <argsstring>()</argsstring>
+        <name>fileSelection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prompts user to choose a file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="User.h" line="39" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_1a700d061fc686d4da496966d8fcd8a9fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UI::openFile</definition>
+        <argsstring>()</argsstring>
+        <name>openFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prompt user which file to open </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="User.h" line="47" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_1a6ecd99d541952da69db84043d90007c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UI::setOpenFileName</definition>
+        <argsstring>(std::string fileOpen)</argsstring>
+        <name>setOpenFileName</name>
+        <param>
+          <type>std::string</type>
+          <declname>fileOpen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setter for OpenFileName <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileOpen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- attribute for opening the file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="User.h" line="53" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_1af8ce954711ac7f89647ae5fbccbaf50b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string UI::getOpenFileName</definition>
+        <argsstring>()</argsstring>
+        <name>getOpenFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Getter for OpenFileName </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="User.h" line="58" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_1afb339d71cdf0ba92aa97d382339c6d1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UI::setSaveFileName</definition>
+        <argsstring>(std::string fileSave)</argsstring>
+        <name>setSaveFileName</name>
+        <param>
+          <type>std::string</type>
+          <declname>fileSave</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setter for SaveFileName <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileSave</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- attribute for saving the file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="User.h" line="64" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_1a24a3e5aea6b71cd945fbf4ce6f81b50f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string UI::getFileSave</definition>
+        <argsstring>()</argsstring>
+        <name>getFileSave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Getter for getFileSave </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="User.h" line="69" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_1acfb13f932cab601e0cdb3428c7b61304" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UI::setProcessorStatus</definition>
+        <argsstring>(int processor)</argsstring>
+        <name>setProcessorStatus</name>
+        <param>
+          <type>int</type>
+          <declname>processor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setter for ProcesorStatus <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>processor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- attribute for processor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="User.h" line="75" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_1aa0a3466bf86bd7a5e3963ad9d74e519f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int UI::getProcessorStatus</definition>
+        <argsstring>()</argsstring>
+        <name>getProcessorStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Getter for ProcesorStatus </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="User.h" line="80" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_1ac0f2a877fbb1cd5024023a8d4065b627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UI::setOption</definition>
+        <argsstring>(int option)</argsstring>
+        <name>setOption</name>
+        <param>
+          <type>int</type>
+          <declname>option</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setter for private attribute option <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>option</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pick an option, in integers </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="User.h" line="86" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_1ac9f9e9849bc99732b6060f53f0e75055" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int UI::getOption</definition>
+        <argsstring>()</argsstring>
+        <name>getOption</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Getter for private attribute option </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="User.h" line="91" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_1a5409abf4f889aa20d31bd5a676bb438f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int UI::switchCase</definition>
+        <argsstring>(int option)</argsstring>
+        <name>switchCase</name>
+        <param>
+          <type>int</type>
+          <declname>option</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Uses a switch function to select the type of process buffer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>option</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pick an option, in integers </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="User.h" line="97" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>User Interface. ... </para>
+    </detaileddescription>
+    <location file="User.h" line="16" column="1" bodyfile="User.h" bodystart="16" bodyend="98"/>
+    <listofallmembers>
+      <member refid="class_u_i_1aa25e6ee97337c5f4bd554216cfe3eddb" prot="private" virt="non-virtual"><scope>UI</scope><name>fileName</name></member>
+      <member refid="class_u_i_1ad28850efa6208ecfc32bad726b256ab8" prot="public" virt="non-virtual"><scope>UI</scope><name>fileSelection</name></member>
+      <member refid="class_u_i_1a24a3e5aea6b71cd945fbf4ce6f81b50f" prot="public" virt="non-virtual"><scope>UI</scope><name>getFileSave</name></member>
+      <member refid="class_u_i_1af8ce954711ac7f89647ae5fbccbaf50b" prot="public" virt="non-virtual"><scope>UI</scope><name>getOpenFileName</name></member>
+      <member refid="class_u_i_1ac9f9e9849bc99732b6060f53f0e75055" prot="public" virt="non-virtual"><scope>UI</scope><name>getOption</name></member>
+      <member refid="class_u_i_1aa0a3466bf86bd7a5e3963ad9d74e519f" prot="public" virt="non-virtual"><scope>UI</scope><name>getProcessorStatus</name></member>
+      <member refid="class_u_i_1a37934cbface8c586f74312fbc8365488" prot="private" virt="non-virtual"><scope>UI</scope><name>newFileName</name></member>
+      <member refid="class_u_i_1a700d061fc686d4da496966d8fcd8a9fc" prot="public" virt="non-virtual"><scope>UI</scope><name>openFile</name></member>
+      <member refid="class_u_i_1a302bc8a82e8da248afee976744058e59" prot="private" virt="non-virtual"><scope>UI</scope><name>option</name></member>
+      <member refid="class_u_i_1aa8f6e3aab8b45dbcd0555f56cf0c0863" prot="private" virt="non-virtual"><scope>UI</scope><name>processorStatus</name></member>
+      <member refid="class_u_i_1a6ecd99d541952da69db84043d90007c6" prot="public" virt="non-virtual"><scope>UI</scope><name>setOpenFileName</name></member>
+      <member refid="class_u_i_1ac0f2a877fbb1cd5024023a8d4065b627" prot="public" virt="non-virtual"><scope>UI</scope><name>setOption</name></member>
+      <member refid="class_u_i_1acfb13f932cab601e0cdb3428c7b61304" prot="public" virt="non-virtual"><scope>UI</scope><name>setProcessorStatus</name></member>
+      <member refid="class_u_i_1afb339d71cdf0ba92aa97d382339c6d1e" prot="public" virt="non-virtual"><scope>UI</scope><name>setSaveFileName</name></member>
+      <member refid="class_u_i_1a5409abf4f889aa20d31bd5a676bb438f" prot="public" virt="non-virtual"><scope>UI</scope><name>switchCase</name></member>
+      <member refid="class_u_i_1a675985a56b5e87ebdc8e5884b9f2ee09" prot="public" virt="non-virtual"><scope>UI</scope><name>UI</name></member>
+      <member refid="class_u_i_1a1b23d0c64c7cbb3d143d90ec532a7ccd" prot="public" virt="virtual"><scope>UI</scope><name>~UI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

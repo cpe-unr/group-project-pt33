@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="class_analyze_wav" kind="class"><name>AnalyzeWav</name>
+    <member refid="class_analyze_wav_1a614901bc64fbab98e7df47f00779c639" kind="variable"><name>fileIn</name></member>
+    <member refid="class_analyze_wav_1a07ce666f167bdc61d6fb9650f49db6ba" kind="variable"><name>numChan</name></member>
+    <member refid="class_analyze_wav_1a93ec48250b3482e14b12ebcc64305fd0" kind="variable"><name>bitSize</name></member>
+    <member refid="class_analyze_wav_1a253c0731779dcef21bc35245214d2e6b" kind="variable"><name>PCM</name></member>
+    <member refid="class_analyze_wav_1aebb69d3e2036b7f92dbecb33f9cfa95c" kind="variable"><name>bitRate</name></member>
+    <member refid="class_analyze_wav_1a62775e0f6c212887f0d1caf8d33d4540" kind="variable"><name>sampleRate</name></member>
+    <member refid="class_analyze_wav_1a16d7f700be337b2a9ddc0ffbd3d30c5c" kind="variable"><name>waveHeader</name></member>
+    <member refid="class_analyze_wav_1ae5bb67992cea714a2b087628312711f2" kind="function"><name>AnalyzeWav</name></member>
+    <member refid="class_analyze_wav_1a31bfefb967753be20b835dd0b54e2bef" kind="function"><name>getTechData</name></member>
+    <member refid="class_analyze_wav_1ac458b1c0db1e5c36e4fb2fff7c9362ab" kind="function"><name>getChan</name></member>
+    <member refid="class_analyze_wav_1abd51c9d07b38d032d66759aa22d29fbc" kind="function"><name>getNumBits</name></member>
+    <member refid="class_analyze_wav_1a61cb903baae25752b64fd5550bf893be" kind="function"><name>getFileType</name></member>
+    <member refid="class_analyze_wav_1a4be586b0fa30cd09edc33a08b50d2635" kind="function"><name>getPCM</name></member>
+    <member refid="class_analyze_wav_1a1a3f6bf3d15f4ca0830562d847ac4e7b" kind="function"><name>getBitRate</name></member>
+    <member refid="class_analyze_wav_1a0be84b719775075f22f7c352b35bfa0e" kind="function"><name>getSampleRate</name></member>
+    <member refid="class_analyze_wav_1ac7a5a1a50bdd4ad3997d0caa766e0141" kind="function"><name>displayTechData</name></member>
+    <member refid="class_analyze_wav_1a0f59f7a664d43df96dfa1e9c6531bbff" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="class_echo" kind="class"><name>Echo</name>
+    <member refid="class_echo_1abf5c35aa942bfae1832de23bb261e444" kind="variable"><name>delay</name></member>
+    <member refid="class_echo_1ababd42898feed0775f5234d53fe9bff1" kind="function"><name>Echo</name></member>
+    <member refid="class_echo_1a28d71de619dda9e6e51567a04bfb60d6" kind="function"><name>Echo</name></member>
+    <member refid="class_echo_1a03c51e9ff426744f7ae68a9aac8614c8" kind="function"><name>~Echo</name></member>
+    <member refid="class_echo_1a03838377b219245716706ba73692b728" kind="function"><name>processBuffer</name></member>
+    <member refid="class_echo_1a9cec2d84f86fe4ec1ba0c3f5cd54a253" kind="function"><name>processBuffer</name></member>
+  </compound>
+  <compound refid="classi_file_i_o" kind="class"><name>iFileIO</name>
+    <member refid="classi_file_i_o_1ad642afa5dfd46efbdfb6b757a0e1c07d" kind="function"><name>readFile</name></member>
+    <member refid="classi_file_i_o_1aa5e06a46f0f287bb7dcaf8fc4975c16a" kind="function"><name>writeFile</name></member>
+  </compound>
+  <compound refid="class_limiter" kind="class"><name>Limiter</name>
+    <member refid="class_limiter_1aeb9287deaa87e9a6ad9658990cde09fe" kind="function"><name>Limiter</name></member>
+    <member refid="class_limiter_1a29b205ac461e886d81eee0cf5454e27a" kind="function"><name>~Limiter</name></member>
+    <member refid="class_limiter_1a682d089fad04cdf7f44ad93e621d5611" kind="function"><name>processBuffer</name></member>
+    <member refid="class_limiter_1ab39895e88fbab7e682e9b8d7a97364e1" kind="function"><name>processBuffer</name></member>
+  </compound>
+  <compound refid="class_mono16" kind="class"><name>Mono16</name>
+    <member refid="class_mono16_1a5a0e80b124405863672cb00998cca91d" kind="variable"><name>fileName</name></member>
+    <member refid="class_mono16_1a9fcb7ddd826770926db408ccde450408" kind="variable"><name>buffer</name></member>
+    <member refid="class_mono16_1a266893f88d27b9ca5925feadd4f299e7" kind="variable"><name>waveHeader</name></member>
+    <member refid="class_mono16_1a2dc9a67018d02be79f58a74132d0407d" kind="function"><name>readFile</name></member>
+    <member refid="class_mono16_1a5f0fb6aabaf01c24c0dd34aea0acc457" kind="function"><name>writeFile</name></member>
+    <member refid="class_mono16_1a9cd5aa9c7190e5d901e1862a98e24d6e" kind="function"><name>getBuffer</name></member>
+    <member refid="class_mono16_1a9d996f29118ef1586cb9269a063959ed" kind="function"><name>getBufferSize</name></member>
+    <member refid="class_mono16_1a367997b24537cace444a3b48d9c7fe9a" kind="function"><name>~Mono16</name></member>
+  </compound>
+  <compound refid="class_mono8" kind="class"><name>Mono8</name>
+    <member refid="class_mono8_1a25d90e703b802960c8f7313d6df91791" kind="variable"><name>fileName</name></member>
+    <member refid="class_mono8_1adf63c4bc60b9fa34034e5699a88b2e5c" kind="variable"><name>buffer</name></member>
+    <member refid="class_mono8_1acd1a00ffd18da64ef00319bfc5d50be2" kind="variable"><name>waveHeader</name></member>
+    <member refid="class_mono8_1af1d9077c9b3f0a7873af9f06b08c89b6" kind="function"><name>readFile</name></member>
+    <member refid="class_mono8_1a84b9507434bcfebe1fc7bd0f969135bc" kind="function"><name>writeFile</name></member>
+    <member refid="class_mono8_1a4d749d0bcac1fe419258f8f709fd528b" kind="function"><name>getBuffer</name></member>
+    <member refid="class_mono8_1a636a8dc8370ba4a72f70e4c83f5a61a4" kind="function"><name>getBufferSize</name></member>
+    <member refid="class_mono8_1ac060ce70f698fdc75b36a8c475852514" kind="function"><name>~Mono8</name></member>
+  </compound>
+  <compound refid="class_noise_gate" kind="class"><name>NoiseGate</name>
+    <member refid="class_noise_gate_1af82e5635b2f7bdf0c10486dc4ff0290c" kind="variable"><name>noiseGap</name></member>
+    <member refid="class_noise_gate_1ae9ccbe5934108f756ada0e492db5f71e" kind="function"><name>NoiseGate</name></member>
+    <member refid="class_noise_gate_1a9ccce78f6b0eca1f5b88b564ebf24a19" kind="function"><name>NoiseGate</name></member>
+    <member refid="class_noise_gate_1abcdf1888710c86086b1a595189191afd" kind="function"><name>~NoiseGate</name></member>
+    <member refid="class_noise_gate_1a4839740cf140fb1addfc853db12382c6" kind="function"><name>processBuffer</name></member>
+    <member refid="class_noise_gate_1a0abb457d638df980c001c46bc93e9f9c" kind="function"><name>processBuffer</name></member>
+  </compound>
+  <compound refid="class_stereo16" kind="class"><name>Stereo16</name>
+    <member refid="class_stereo16_1a900e590ec60713d2e6e0098dc3562cd5" kind="variable"><name>fileName</name></member>
+    <member refid="class_stereo16_1a7095134aa2103c4a8831d0e681f15683" kind="variable"><name>buffer</name></member>
+    <member refid="class_stereo16_1a7ca53b305b70852d936b677fc09131c8" kind="variable"><name>waveHeader</name></member>
+    <member refid="class_stereo16_1a977554c187eb0d150c710861ecdef3f1" kind="variable"><name>leftBuffer</name></member>
+    <member refid="class_stereo16_1a148b75609ffe363c485568b238e1741c" kind="variable"><name>rightBuffer</name></member>
+    <member refid="class_stereo16_1ad03c4d71b3d116136cd60585f324dfe3" kind="function"><name>readFile</name></member>
+    <member refid="class_stereo16_1ae78481efb405165eecf4baf75bc912b1" kind="function"><name>writeFile</name></member>
+    <member refid="class_stereo16_1a037e96fa11ae7a93f8840604b2fcd07f" kind="function"><name>getBuffer</name></member>
+    <member refid="class_stereo16_1a9da34917c82d19b3c8bca7e787895283" kind="function"><name>getBufferSize</name></member>
+    <member refid="class_stereo16_1adc77847b1e7ae14fe975dc11f6994715" kind="function"><name>allocateBuffer</name></member>
+    <member refid="class_stereo16_1addc2df70c65ea5ee364ed1a7fe181501" kind="function"><name>reallocateBuffer</name></member>
+    <member refid="class_stereo16_1a9b8656653d748945c20707863067a86f" kind="function"><name>getLeftBuffer</name></member>
+    <member refid="class_stereo16_1aa23264c2262c76ad65dd69499c5e55f3" kind="function"><name>getRightBuffer</name></member>
+    <member refid="class_stereo16_1a05e724cc0c8e92b565a16dd1a51ca154" kind="function"><name>~Stereo16</name></member>
+  </compound>
+  <compound refid="class_stereo8" kind="class"><name>Stereo8</name>
+    <member refid="class_stereo8_1a97140c3f4187881309a56e402b351cc5" kind="variable"><name>fileName</name></member>
+    <member refid="class_stereo8_1a417983b757d93efd1dd14be399536691" kind="variable"><name>buffer</name></member>
+    <member refid="class_stereo8_1aa49c1a6cd83b171872aa9144dc7c7944" kind="variable"><name>waveHeader</name></member>
+    <member refid="class_stereo8_1a58edc9928905fd33fa19078f2b8f7ad2" kind="variable"><name>leftBuffer</name></member>
+    <member refid="class_stereo8_1a40e79032afb892bc0d3a652900f0a2a6" kind="variable"><name>rightBuffer</name></member>
+    <member refid="class_stereo8_1aba6822797b8b7d732468ebd99759e38d" kind="function"><name>readFile</name></member>
+    <member refid="class_stereo8_1ac315365091cc3a7faea9647d77db92bf" kind="function"><name>writeFile</name></member>
+    <member refid="class_stereo8_1a26b9af95d5ec0b06202ee1b152bbe984" kind="function"><name>getBuffer</name></member>
+    <member refid="class_stereo8_1a8b7c2f6ef8310537824092a540638321" kind="function"><name>getBufferSize</name></member>
+    <member refid="class_stereo8_1a6f5032071948a2b44b2cc0bc60589f5a" kind="function"><name>allocateBuffer</name></member>
+    <member refid="class_stereo8_1a995733c2441e5a087de80be60afe5aea" kind="function"><name>reallocateBuffer</name></member>
+    <member refid="class_stereo8_1a04e47e413bf533d5ce07a47cc1d1b5c5" kind="function"><name>getLeftBuffer</name></member>
+    <member refid="class_stereo8_1a89549c0e6cbbd50cc938f17d438d09a4" kind="function"><name>getRightBuffer</name></member>
+    <member refid="class_stereo8_1a8435cf8a3d47b646c1902f5d5b142f8b" kind="function"><name>~Stereo8</name></member>
+  </compound>
+  <compound refid="class_u_i" kind="class"><name>UI</name>
+    <member refid="class_u_i_1aa25e6ee97337c5f4bd554216cfe3eddb" kind="variable"><name>fileName</name></member>
+    <member refid="class_u_i_1a37934cbface8c586f74312fbc8365488" kind="variable"><name>newFileName</name></member>
+    <member refid="class_u_i_1aa8f6e3aab8b45dbcd0555f56cf0c0863" kind="variable"><name>processorStatus</name></member>
+    <member refid="class_u_i_1a302bc8a82e8da248afee976744058e59" kind="variable"><name>option</name></member>
+    <member refid="class_u_i_1a675985a56b5e87ebdc8e5884b9f2ee09" kind="function"><name>UI</name></member>
+    <member refid="class_u_i_1a1b23d0c64c7cbb3d143d90ec532a7ccd" kind="function"><name>~UI</name></member>
+    <member refid="class_u_i_1ad28850efa6208ecfc32bad726b256ab8" kind="function"><name>fileSelection</name></member>
+    <member refid="class_u_i_1a700d061fc686d4da496966d8fcd8a9fc" kind="function"><name>openFile</name></member>
+    <member refid="class_u_i_1a6ecd99d541952da69db84043d90007c6" kind="function"><name>setOpenFileName</name></member>
+    <member refid="class_u_i_1af8ce954711ac7f89647ae5fbccbaf50b" kind="function"><name>getOpenFileName</name></member>
+    <member refid="class_u_i_1afb339d71cdf0ba92aa97d382339c6d1e" kind="function"><name>setSaveFileName</name></member>
+    <member refid="class_u_i_1a24a3e5aea6b71cd945fbf4ce6f81b50f" kind="function"><name>getFileSave</name></member>
+    <member refid="class_u_i_1acfb13f932cab601e0cdb3428c7b61304" kind="function"><name>setProcessorStatus</name></member>
+    <member refid="class_u_i_1aa0a3466bf86bd7a5e3963ad9d74e519f" kind="function"><name>getProcessorStatus</name></member>
+    <member refid="class_u_i_1ac0f2a877fbb1cd5024023a8d4065b627" kind="function"><name>setOption</name></member>
+    <member refid="class_u_i_1ac9f9e9849bc99732b6060f53f0e75055" kind="function"><name>getOption</name></member>
+    <member refid="class_u_i_1a5409abf4f889aa20d31bd5a676bb438f" kind="function"><name>switchCase</name></member>
+  </compound>
+  <compound refid="structwav__header" kind="struct"><name>wav_header</name>
+    <member refid="structwav__header_1a977b8193bf1f39dbd815c6210f0bb6c6" kind="variable"><name>riff_header</name></member>
+    <member refid="structwav__header_1a89a86a26a94e726411e34517bfc9105e" kind="variable"><name>wav_size</name></member>
+    <member refid="structwav__header_1a0dc0cff34ad7fe5e59c5cbcee1640354" kind="variable"><name>wave_header</name></member>
+    <member refid="structwav__header_1a4039d1e8e91d7940aa45a29aad27b4ce" kind="variable"><name>fmt_header</name></member>
+    <member refid="structwav__header_1a5fb4363d52bbff51ca2e8884408208c6" kind="variable"><name>fmt_chunk_size</name></member>
+    <member refid="structwav__header_1a94c9ee0387f846c47eb9e97636994d93" kind="variable"><name>audio_format</name></member>
+    <member refid="structwav__header_1a625d84de0f598e50c072d725f6e3b6b8" kind="variable"><name>num_channels</name></member>
+    <member refid="structwav__header_1a0632019c676aa88f0351c0ab11461de0" kind="variable"><name>sample_rate</name></member>
+    <member refid="structwav__header_1a8330740d45200d6aee4ba54fc0d834d8" kind="variable"><name>byte_rate</name></member>
+    <member refid="structwav__header_1a2672b73c81973008677db6349fbc232a" kind="variable"><name>sample_alignment</name></member>
+    <member refid="structwav__header_1a63fa60069060bae97c8a64c5b37afa23" kind="variable"><name>bit_depth</name></member>
+    <member refid="structwav__header_1ae43fac12459053e98a80e3879c5cd2a7" kind="variable"><name>data_header</name></member>
+    <member refid="structwav__header_1a3eeeca270947eab7c7aaee61bbee9b0e" kind="variable"><name>data_bytes</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="analyze_wav_8cpp" kind="file"><name>analyzeWav.cpp</name>
+    <member refid="analyze_wav_8cpp_1ad61c5bfcc44bddaa97f504184f0f24d9" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="analyze_wav_8h" kind="file"><name>analyzeWav.h</name>
+  </compound>
+  <compound refid="_echo_8cpp" kind="file"><name>Echo.cpp</name>
+  </compound>
+  <compound refid="_echo_8h" kind="file"><name>Echo.h</name>
+  </compound>
+  <compound refid="i_file_i_o_8h" kind="file"><name>iFileIO.h</name>
+  </compound>
+  <compound refid="_limiter_8cpp" kind="file"><name>Limiter.cpp</name>
+  </compound>
+  <compound refid="_limiter_8h" kind="file"><name>Limiter.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ad9d0e397081801b3c81f84aef014b9ca" kind="function"><name>fn</name></member>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="mono16_8cpp" kind="file"><name>mono16.cpp</name>
+  </compound>
+  <compound refid="mono16_8h" kind="file"><name>mono16.h</name>
+  </compound>
+  <compound refid="mono8_8cpp" kind="file"><name>mono8.cpp</name>
+  </compound>
+  <compound refid="mono8_8h" kind="file"><name>mono8.h</name>
+  </compound>
+  <compound refid="_noise_gate_8cpp" kind="file"><name>NoiseGate.cpp</name>
+  </compound>
+  <compound refid="_noise_gate_8h" kind="file"><name>NoiseGate.h</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="stereo16_8cpp" kind="file"><name>stereo16.cpp</name>
+  </compound>
+  <compound refid="stereo16_8h" kind="file"><name>stereo16.h</name>
+  </compound>
+  <compound refid="stereo8_8cpp" kind="file"><name>stereo8.cpp</name>
+  </compound>
+  <compound refid="stereo8_8h" kind="file"><name>stereo8.h</name>
+  </compound>
+  <compound refid="_user_8cpp" kind="file"><name>User.cpp</name>
+  </compound>
+  <compound refid="_user_8h" kind="file"><name>User.h</name>
+  </compound>
+  <compound refid="wave_header_8h" kind="file"><name>waveHeader.h</name>
+    <member refid="wave_header_8h_1a06d81733fc0433f9cf0ccf39c5a0a0d9" kind="typedef"><name>wav_header</name></member>
+  </compound>
+  <compound refid="md__r_e_a_d_m_e" kind="page"><name>md_README</name>
+  </compound>
+</doxygenindex>

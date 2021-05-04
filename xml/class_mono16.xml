@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_mono16" kind="class" language="C++" prot="public">
+    <compoundname>Mono16</compoundname>
+    <basecompoundref refid="classi_file_i_o" prot="public" virt="non-virtual">iFileIO</basecompoundref>
+    <includes refid="mono16_8h" local="no">mono16.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mono16_1a5a0e80b124405863672cb00998cca91d" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Mono16::fileName</definition>
+        <argsstring></argsstring>
+        <name>fileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mono16.h" line="15" column="13" bodyfile="mono16.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mono16_1a9fcb7ddd826770926db408ccde450408" prot="private" static="no" mutable="no">
+        <type>short *</type>
+        <definition>short* Mono16::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mono16.h" line="16" column="7" bodyfile="mono16.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mono16_1a266893f88d27b9ca5925feadd4f299e7" prot="private" static="no" mutable="no">
+        <type><ref refid="structwav__header" kindref="compound">wav_header</ref></type>
+        <definition>wav_header Mono16::waveHeader</definition>
+        <argsstring></argsstring>
+        <name>waveHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mono16.h" line="17" column="12" bodyfile="mono16.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mono16_1a2dc9a67018d02be79f58a74132d0407d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Mono16::readFile</definition>
+        <argsstring>() override</argsstring>
+        <name>readFile</name>
+        <reimplements refid="classi_file_i_o_1ad642afa5dfd46efbdfb6b757a0e1c07d">readFile</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reads the file that is inputted into the program </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mono16.h" line="23" column="6" bodyfile="mono16.cpp" bodystart="12" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mono16_1a5f0fb6aabaf01c24c0dd34aea0acc457" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Mono16::writeFile</definition>
+        <argsstring>(const std::string &amp;outFileName) override</argsstring>
+        <name>writeFile</name>
+        <reimplements refid="classi_file_i_o_1aa5e06a46f0f287bb7dcaf8fc4975c16a">writeFile</reimplements>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>outFileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Writes out the file that is outputted after using the program <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outFileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the new name for the outputted file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mono16.h" line="29" column="6" bodyfile="mono16.cpp" bodystart="30" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mono16_1a9cd5aa9c7190e5d901e1862a98e24d6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>short *</type>
+        <definition>short * Mono16::getBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>getBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns buffer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mono16.h" line="34" column="7" bodyfile="mono16.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mono16_1a9d996f29118ef1586cb9269a063959ed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Mono16::getBufferSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getBufferSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns waveHeader.data_bytes </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mono16.h" line="39" column="5" bodyfile="mono16.cpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mono16_1a367997b24537cace444a3b48d9c7fe9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Mono16::~Mono16</definition>
+        <argsstring>()</argsstring>
+        <name>~Mono16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor for mono8 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mono16.h" line="44" column="9" bodyfile="mono16.cpp" bodystart="39" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class that buffers 16-bit mono file </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mono16</label>
+        <link refid="class_mono16"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iFileIO</label>
+        <link refid="classi_file_i_o"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mono16</label>
+        <link refid="class_mono16"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iFileIO</label>
+        <link refid="classi_file_i_o"/>
+      </node>
+    </collaborationgraph>
+    <location file="mono16.h" line="13" column="1" bodyfile="mono16.h" bodystart="14" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_mono16_1a9fcb7ddd826770926db408ccde450408" prot="private" virt="non-virtual"><scope>Mono16</scope><name>buffer</name></member>
+      <member refid="class_mono16_1a5a0e80b124405863672cb00998cca91d" prot="private" virt="non-virtual"><scope>Mono16</scope><name>fileName</name></member>
+      <member refid="class_mono16_1a9cd5aa9c7190e5d901e1862a98e24d6e" prot="public" virt="non-virtual"><scope>Mono16</scope><name>getBuffer</name></member>
+      <member refid="class_mono16_1a9d996f29118ef1586cb9269a063959ed" prot="public" virt="non-virtual"><scope>Mono16</scope><name>getBufferSize</name></member>
+      <member refid="class_mono16_1a2dc9a67018d02be79f58a74132d0407d" prot="public" virt="virtual"><scope>Mono16</scope><name>readFile</name></member>
+      <member refid="class_mono16_1a266893f88d27b9ca5925feadd4f299e7" prot="private" virt="non-virtual"><scope>Mono16</scope><name>waveHeader</name></member>
+      <member refid="class_mono16_1a5f0fb6aabaf01c24c0dd34aea0acc457" prot="public" virt="virtual"><scope>Mono16</scope><name>writeFile</name></member>
+      <member refid="class_mono16_1a367997b24537cace444a3b48d9c7fe9a" prot="public" virt="virtual"><scope>Mono16</scope><name>~Mono16</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="i_file_i_o_8h" kind="file" language="C++">
+    <compoundname>iFileIO.h</compoundname>
+    <includedby refid="mono16_8h" local="yes">mono16.h</includedby>
+    <includedby refid="mono8_8h" local="yes">mono8.h</includedby>
+    <includedby refid="stereo16_8h" local="yes">stereo16.h</includedby>
+    <includedby refid="stereo8_8h" local="yes">stereo8.h</includedby>
+    <invincdepgraph>
+      <node id="4">
+        <label>mono8.h</label>
+        <link refid="mono8_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mono16.h</label>
+        <link refid="mono16_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>stereo8.cpp</label>
+        <link refid="stereo8_8cpp"/>
+      </node>
+      <node id="6">
+        <label>stereo16.h</label>
+        <link refid="stereo16_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stereo8.h</label>
+        <link refid="stereo8_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>mono8.cpp</label>
+        <link refid="mono8_8cpp"/>
+      </node>
+      <node id="7">
+        <label>stereo16.cpp</label>
+        <link refid="stereo16_8cpp"/>
+      </node>
+      <node id="3">
+        <label>mono16.cpp</label>
+        <link refid="mono16_8cpp"/>
+      </node>
+      <node id="1">
+        <label>iFileIO.h</label>
+        <link refid="i_file_i_o_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classi_file_i_o" prot="public">iFileIO</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//Created<sp/>by:<sp/>Mark<sp/>Marsala<sp/>and<sp/>Marshall<sp/>Farris</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//Date:<sp/>5/4/2021</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//Interface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IFILEIO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IFILEIO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classi_file_i_o" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classi_file_i_o" kindref="compound">iFileIO</ref>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classi_file_i_o_1ad642afa5dfd46efbdfb6b757a0e1c07d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classi_file_i_o_1ad642afa5dfd46efbdfb6b757a0e1c07d" kindref="member">readFile</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classi_file_i_o_1aa5e06a46f0f287bb7dcaf8fc4975c16a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classi_file_i_o_1aa5e06a46f0f287bb7dcaf8fc4975c16a" kindref="member">writeFile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;outFileName)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="iFileIO.h"/>
+  </compounddef>
+</doxygen>

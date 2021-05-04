@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_echo" kind="class" language="C++" prot="public">
+    <compoundname>Echo</compoundname>
+    <includes refid="_echo_8h" local="no">Echo.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_echo_1abf5c35aa942bfae1832de23bb261e444" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Echo::delay</definition>
+        <argsstring></argsstring>
+        <name>delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Echo.h" line="12" column="5" bodyfile="Echo.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_echo_1ababd42898feed0775f5234d53fe9bff1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Echo::Echo</definition>
+        <argsstring>()</argsstring>
+        <name>Echo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor for the <ref refid="class_echo" kindref="compound">Echo</ref> class </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Echo.h" line="18" column="1" bodyfile="Echo.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_echo_1a28d71de619dda9e6e51567a04bfb60d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Echo::Echo</definition>
+        <argsstring>(int newDelay)</argsstring>
+        <name>Echo</name>
+        <param>
+          <type>int</type>
+          <declname>newDelay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Paramaterized constructor for the <ref refid="class_echo" kindref="compound">Echo</ref> class <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newDelay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the new delay that will be added to the wav file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Echo.h" line="24" column="1" bodyfile="Echo.cpp" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_echo_1a03c51e9ff426744f7ae68a9aac8614c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Echo::~Echo</definition>
+        <argsstring>()</argsstring>
+        <name>~Echo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor for the <ref refid="class_echo" kindref="compound">Echo</ref> class </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Echo.h" line="29" column="9" bodyfile="Echo.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_echo_1a03838377b219245716706ba73692b728" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename mono</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Echo::processBuffer</definition>
+        <argsstring>(mono buffer, int bufferSize)</argsstring>
+        <name>processBuffer</name>
+        <param>
+          <type>mono</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bufferSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Template for mono files <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mono</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- type mono Process buffer for type mono </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- buffer for the file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bufferSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- size of the buffer in the file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Echo.h" line="42" column="6" bodyfile="Echo.cpp" bodystart="22" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_echo_1a9cec2d84f86fe4ec1ba0c3f5cd54a253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename stereo</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Echo::processBuffer</definition>
+        <argsstring>(stereo rightBuffer, stereo leftBuffer, int bufferSize)</argsstring>
+        <name>processBuffer</name>
+        <param>
+          <type>stereo</type>
+          <declname>rightBuffer</declname>
+        </param>
+        <param>
+          <type>stereo</type>
+          <declname>leftBuffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bufferSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Template for stereo files <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stereo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- type stereo Process buffer for type stereo </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>leftBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- left buffer in stereo file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rightBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- right buffer in stereo file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bufferSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- buffer size of the stereo file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Echo.h" line="56" column="6" bodyfile="Echo.cpp" bodystart="33" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class that creates an echo effect for the wav file </para>
+    </detaileddescription>
+    <location file="Echo.h" line="11" column="1" bodyfile="Echo.h" bodystart="11" bodyend="57"/>
+    <listofallmembers>
+      <member refid="class_echo_1abf5c35aa942bfae1832de23bb261e444" prot="private" virt="non-virtual"><scope>Echo</scope><name>delay</name></member>
+      <member refid="class_echo_1ababd42898feed0775f5234d53fe9bff1" prot="public" virt="non-virtual"><scope>Echo</scope><name>Echo</name></member>
+      <member refid="class_echo_1a28d71de619dda9e6e51567a04bfb60d6" prot="public" virt="non-virtual"><scope>Echo</scope><name>Echo</name></member>
+      <member refid="class_echo_1a03838377b219245716706ba73692b728" prot="public" virt="non-virtual"><scope>Echo</scope><name>processBuffer</name></member>
+      <member refid="class_echo_1a9cec2d84f86fe4ec1ba0c3f5cd54a253" prot="public" virt="non-virtual"><scope>Echo</scope><name>processBuffer</name></member>
+      <member refid="class_echo_1a03c51e9ff426744f7ae68a9aac8614c8" prot="public" virt="virtual"><scope>Echo</scope><name>~Echo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
