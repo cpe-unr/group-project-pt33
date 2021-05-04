@@ -1,0 +1,1 @@
+//Did not have time to implement metaData details. Would have worked similar to technical data details that can be found in analyzeWav.cpp and csv.cpp. Maps would most likely be the best way to store this data, however we have not covered that in this class. 
