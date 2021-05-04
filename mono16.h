@@ -7,16 +7,40 @@
 #include "waveHeader.h"
 #include "iFileIO.h"
 
+/**
+ * Class that buffers 16-bit mono file
+ */
 class Mono16 : public iFileIO
 {
 	std::string fileName;
 	short* buffer = NULL;
 	wav_header waveHeader;
 public:
-	void readFile(const std::string &fileName) override;
+
+/**
+ * Reads the file that is inputted into the program
+ */
+	void readFile() override;
+
+/** 
+ * Writes out the file that is outputted after using the program
+ * @param outFileName - the new name for the outputted file
+ */
 	void writeFile(const std::string &outFileName) override;
+
+/**
+ * Returns buffer
+ */
 	short* getBuffer();
+
+/**
+*  Returns waveHeader.data_bytes
+*/
 	int getBufferSize() const;
+
+/**
+ * Destructor for mono8
+ */
 	virtual ~Mono16();
 };
 

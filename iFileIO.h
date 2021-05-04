@@ -5,10 +5,22 @@
 #ifndef IFILEIO_H
 #define IFILEIO_H
 
-class iFileIO
-{
+/** 
+ * Class that reads and writes the file inputted into the program
+ */
+class iFileIO{
+
 protected:
-	virtual void readFile(const std::string &fileName) = 0;
+
+/**
+ * Function that reads the file
+ */
+	virtual void readFile() = 0;
+
+/**
+ * Function that writes the file
+ * @param outFileName - writes out the new file name
+ */
 	virtual void writeFile(const std::string &outFileName) = 0;
 };
 

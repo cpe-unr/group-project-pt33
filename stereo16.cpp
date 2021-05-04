@@ -9,7 +9,7 @@
 
 using namespace std;
 
-void Stereo16::readFile(const std::string &fileName)
+void Stereo16::readFile()
 {
 	std::ifstream file(fileName,std::ios::binary | std::ios::in);
 	if(file.is_open())

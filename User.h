@@ -44,4 +44,4 @@ public:
 	int switchCase(int option);
 };
 
-#endif
+#endif~

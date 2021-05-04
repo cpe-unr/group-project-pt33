@@ -4,14 +4,6 @@
 #include <string>
 #include <fstream>
 #include "User.h"
-#include "mono8.h"
-#include "stereo8.h"
-#include "mono16.h"
-#include "stereo16.h"
-#include "Echo.h"
-#include "NoiseGate.h"
-#include "Limiter.h"
-
 /**
  * \brief   The function bar.
  *
@@ -58,36 +50,10 @@ int main() {
 	std::cout << fileIn[3] << std::endl;
 */	
 	
-	Mono8 m8;
-	Stereo8 s8;
-	Mono16 m16;
-	Stereo16 s16;
-	
-	m8.readFile(fileIn[0]);
-	s8.readFile(fileIn[1]);
-	m16.readFile(fileIn[2]);
-	s16.readFile(fileIn[3]);
-	
-	Echo *processor = new Echo(12500);
-//	processor->processBuffer(m8.getBuffer(),m8.getBufferSize());
-//	m8.writeFile("echos.wav");
 
-	
-	Limiter *limiter = new Limiter();
-//	limiter->processBuffer(m8.getBuffer(), m8.getBufferSize());
-//	m8.writeFile("limit.wav");
-
-	NoiseGate *noiseGate = new NoiseGate(8);
-//	noiseGate->processBuffer(m8.getBuffer(), m8.getBufferSize());
-//	m8.writeFile("noise.wav");
 
 	UI user;
 
 
 	return 0;
 }
-
-
-
-
-
