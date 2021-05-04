@@ -1,4 +1,4 @@
-//Created by: Mark Marsala and Marshall Farris
+//Created by: Mark Marsala, Marshall Farris, and Johnathon Franco Sosa
 //Date: 5/4/2021
 //Wav file format copied from PA3
 
@@ -23,6 +23,12 @@
 37-40	“data”	“data” chunk header. Marks the beginning of the data section.
 41-44	File size (data)	Size of the data section.
  */
+
+ /**
+ *  Wav file format.
+ *  Header contains: RIFF Header, Format Header, and Data.
+ */
+
 typedef struct wav_header
 {
 	// RIFF Header

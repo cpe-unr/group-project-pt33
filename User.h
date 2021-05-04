@@ -1,4 +1,4 @@
-/* Created by Mark Marsala, Ethan Thai, and Marshall Farris 
+/* Created by Mark Marsala, Ethan Thai, Johnathon Franco Sosa, and Marshall Farris 
 // for Dr. Lancaster's CS202, Spring 2021
 // Semester Project - Team 33
 */
@@ -9,6 +9,10 @@
 #include <iostream>
 #include <string>
 
+/**
+*  User Interface.
+* ...
+*/
 
 class UI{
 private:
@@ -19,28 +23,75 @@ private:
 //	std::string fileName;
 
 public:
+
+/**
+*  Constructor for the UI class
+*/
 	UI();
+
+/**
+*  Destructor for the UI class
+*/
 	virtual ~UI();
 
+/**
+*  Prompts user to choose a file
+*/
 	int fileSelection();
 
+/**
+*  Prompt user which file to open
+*/
+	//void openFile();
 
+/**
+*  Setter for OpenFileName
+*  @param fileOpen - attribute for opening the file
+*/
+	//void setOpenFileName(std::string fileOpen);
 
-/*	
-	void openFile();
+/**
+*  Getter for OpenFileName
+*/
+	//std::string getOpenFileName();
 
-	void setOpenFileName(std::string fileOpen);
-	std::string getOpenFileName();
+/**
+*  Setter for SaveFileName
+*  @param fileSave - attribute for saving the file
+*/
+	//void setSaveFileName(std::string fileSave);
 
-	void setSaveFileName(std::string fileSave);
-	std::string getFileSave();
+/**
+*  Getter for getFileSave
+*/
+	//std::string getFileSave();
 
-	void setProcessorStatus(int processor);
-	int getProcessorStatus();
+/**
+*  Setter for ProcesorStatus
+*  @param processor - attribute for processor
+*/
+	//void setProcessorStatus(int processor);
+
+/**
+*  Getter for ProcesorStatus
+*/
+	//int getProcessorStatus();
+
+/**
+*  Setter for private attribute option
+*  @param option - pick an option, in integers
 */
 	void setOption(int option);
+
+/**
+*  Getter for private attribute option
+*/
 	int getOption();
 
+/**
+* Uses a switch function to select the type of process buffer
+* @param option - pick an option, in integers
+*/
 	int switch(int option);
 };
 

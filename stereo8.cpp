@@ -1,4 +1,4 @@
-//Created by: Mark Marsala, Marshall Farris, and Johnathon Franco Sosa
+//Created by Mark Marsala, Ethan Thai, Johnathon Franco Sosa, and Marshall Farris
 //Date: 5/4/2021
 //Reading and writing for an 8 bit stereo wav file
 //Even numbers are left buffer, odd numbers are right buffer
